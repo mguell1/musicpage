@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Music Page</title>
+<style>
+body {
+background-image: url("equalizer.png");
+background-size: cover;
+}
+#head{
+color: white;
+font-variant:small-caps;
+font-size:60px;
+text-align:center;
+}
+#taskbar{
+text-align:left;
+list-style-type:none;
+padding:0px;
+color: white;
+}
+#weeks{
+float:left;
+display:block;
+text-decoration:none;
+}
+#othermusic{
+float:right;
+display:block;
+text-decoration:none;
+}
+
+
+.dropbtn {
+  background-color:lavender;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: grey;
+  min-width: 137.5px; 
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+</style>
+</head>
+
+
+<body>
+<h1 id="head">Welcome to my My Music</h1>
+<ul id="taskbar">
+<li id="weeks">
+<div class="dropdown">
+  <button class="dropbtn">Weeks in 2020</button>
+  <div class="dropdown-content">
+    <a href="week1.html">Week 1</a>
+  </div>
+</div>
+</li>
+<li id="othermusic">
+<div class="dropdown">
+  <button class="dropbtn">All-time Music</button>
+  <div class="dropdown-content">
+    <a>Top 10 Songs of 2019</a>
+  </div>
+</div>
+</li>
+
+</ul>
+</body>
+
+
+</html>

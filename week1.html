@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>Music Page</title>
+<style>
+body {
+background-image: url("../equalizer.png");
+background-size: cover;
+}
+#head{
+color: white;
+font-variant:small-caps;
+font-size:60px;
+padding:0px 350px;
+}
+
+#taskbar{
+text-align:left;
+list-style-type:none;
+padding:0px;
+color: white;
+}
+#top li{
+display:inline;
+}
+#weeks{
+float:left;
+display:block;
+text-decoration:none;
+}
+#othermusic{
+float:right;
+display:block;
+text-decoration:none;
+}
+
+.home{
+  background-color:lavender;
+  color: black;
+  font-size: 16px;
+  border: none;
+  float:left;
+}
+.dropbtn {
+  background-color:lavender;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: grey;
+  min-width: 137.5px; 
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+h2{
+margin-top:-40px;
+color: white;
+font-variant:small-caps;
+font-size:30px;
+text-align:center;
+}
+#songs{
+text-align:left;
+list-style-type:none;
+}
+#songs li{
+text-align:center;
+color: white;
+font-size:15px;
+}
+audio {
+width:250px;
+}
+img{
+height: 250px;
+width: 255px;
+}
+
+table{
+margin-top:400px;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+</style>
+</head>
+
+
+<body>
+
+<ul id="top">
+<li><button onclick="location.href='musicpage1.html'" type="button" class="home">HOME</button></li>
+<li><h1 id="head">Welcome to my My Music</h1></li>
+</ul>
+
+<h2>Top 5 Songs of Week 1 of 2020 </h2>
+<ul id="taskbar">
+<li id="weeks">
+<div class="dropdown">
+  <button class="dropbtn">Weeks in 2020</button>
+  <div class="dropdown-content">
+    <a href="#">Week 1</a>
+  </div>
+</div>
+</li>
+<li id="othermusic">
+<div class="dropdown">
+  <button class="dropbtn">All-time Music</button>
+  <div class="dropdown-content">
+    <a href="#">Top 10 Songs of 2019</a>
+  </div>
+</div>
+</li>
+
+</ul>
+
+<table>
+<tr>
+<td>
+<ul id="songs"> 
+<li><img src="prettygirl.jpg" alt="Felly Cover" title="Pretty Girl"></li>
+<li><audio controls>
+<source src="prettygirl.mp3" type="audio/mpeg">
+</audio></li>
+<li><a href="https://www.youtube.com/watch?v=sZ1yaeXgJlU" target="_blank" style="color:white">Pretty Girl - Felly</a></li> 
+</ul>
+</td>
+<td>
+<ul id="songs"> 
+<li><img src="thelife.jpg" alt="Gark Clark Cover" title="The Life"></li>
+<li><audio controls>
+<source src="thelife.mp3" type="audio/mpeg">
+</audio>
+</li>
+<li><a href="https://www.youtube.com/watch?v=EEDRxa6gnPs" target="_blank" style="color:white">The Life - Gary Clark Jr.</a></li> 
+</ul>
+</td>
+<td>
+<ul id="songs"> 
+<li><img src="soulshine.jpg" alt="Griz Cover" title="Find My Own Way"></li>
+<li><audio controls>
+<source src="soulshine.mp3" type="audio/mpeg">
+</audio></li>
+<li><a href="https://www.youtube.com/watch?v=ijsritrkiAA" target="_blank" style="color:white">Soulshine - Gov't Mule</a></li> 
+</ul>
+</td>
+<td>
+<ul id="songs"> 
+<li><img src="king.jpg" alt="El Band Camino Cover" title="Daphne Blue"></li>
+<li><audio controls>
+<source src="king.mp3" type="audio/mpeg">
+</audio></li>
+<li><a href="https://www.youtube.com/watch?v=7RDBp_ofQL8" target="_blank" style="color:white">King of a One Horse Town - Dan Auerbach</a></li> 
+</ul>
+</td>
+<td>
+<ul id="songs"> 
+<li><img src="heartstrings.jpg" alt="Felly Cover" title="Some of it"></li>
+<li><audio controls>
+<source src="heartstrings.mp3" type="audio/mpeg">
+</audio></li>
+<li><a href="https://www.youtube.com/watch?v=R0qxzFwTshY" target="_blank" style="color:white">Heartstrings - Felly</a></li> 
+</ul>
+</td>
+</tr>
+</table>
+
+
+</body>
+
+
+</html>
